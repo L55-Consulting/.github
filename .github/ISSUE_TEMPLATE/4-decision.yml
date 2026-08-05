@@ -1,0 +1,48 @@
+name: Decision
+description: A choice that was made, why, and what it rules out. Closed when recorded, not when implemented.
+title: "[DEC] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Closing this means the choice is **recorded**. Consequences become Tasks or Work Packages as sub-issues.
+  - type: textarea
+    id: decision
+    attributes:
+      label: The decision
+      description: One sentence, stated in the past tense. What was decided.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What forced this choice.
+    validations:
+      required: true
+  - type: textarea
+    id: options
+    attributes:
+      label: Options considered
+      description: One per line, each with the reason it lost.
+    validations:
+      required: true
+  - type: textarea
+    id: rules-out
+    attributes:
+      label: What this rules out
+      description: The doors this closes. The most valuable section and the one most often skipped.
+    validations:
+      required: true
+  - type: textarea
+    id: revisit
+    attributes:
+      label: What would make us revisit this
+    validations:
+      required: false
+  - type: input
+    id: accepted-by
+    attributes:
+      label: Accepted By
+    validations:
+      required: false
