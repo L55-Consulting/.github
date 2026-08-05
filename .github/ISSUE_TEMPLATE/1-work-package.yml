@@ -1,5 +1,6 @@
 name: Work Package
 description: A delegated outcome with a contract, an owner, and an acceptance gate. Use this when in doubt.
+type: Work Package
 title: "[WP] "
 body:
   - type: markdown
