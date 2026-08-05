@@ -85,7 +85,7 @@ body:
       label: Evidence Required
       description: What proves this is done.
       options:
-        - None
+        - NA
         - Self-Check
         - Peer Review
         - Human Acceptance
