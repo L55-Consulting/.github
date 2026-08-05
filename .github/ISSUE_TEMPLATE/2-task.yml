@@ -1,0 +1,46 @@
+name: Task
+description: One executable step. The universal leaf.
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Set **Autonomy** in the sidebar before an agent picks this up. Silence means Propose Only.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: One sentence. What is true when this is done that is not true now.
+    validations:
+      required: true
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  - type: dropdown
+    id: autonomy
+    attributes:
+      label: Autonomy
+      options:
+        - Propose Only
+        - Act Then Review
+        - Act Autonomously
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-bounds
+    attributes:
+      label: Out of bounds
+      description: Leave blank to inherit the parent Work Package.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+    validations:
+      required: false
