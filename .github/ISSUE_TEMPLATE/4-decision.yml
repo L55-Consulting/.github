@@ -1,5 +1,6 @@
 name: Decision
 description: A choice that was made, why, and what it rules out. Closed when recorded, not when implemented.
+type: Decision
 title: "[DEC] "
 body:
   - type: markdown
