@@ -1,0 +1,106 @@
+name: Work Package
+description: A delegated outcome with a contract, an owner, and an acceptance gate. Use this when in doubt.
+title: "[WP] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        After creating this issue, set the sidebar fields to match your answers below:
+        **Program**, **Client**, **Agent Owner**, **Autonomy**, **Evidence Required**, **Accepted By**.
+        A form cannot set them for you.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: One sentence. What is true when this is done that is not true now.
+    validations:
+      required: true
+  - type: textarea
+    id: scope-in
+    attributes:
+      label: Scope - in
+      description: One item per line.
+    validations:
+      required: true
+  - type: textarea
+    id: scope-out
+    attributes:
+      label: Scope - out
+      description: Explicitly excluded. One item per line.
+    validations:
+      required: false
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: Verifiable conditions, as a checklist.
+      value: |
+        - [ ] 
+        - [ ] 
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Budget, deadline, tool, policy, style.
+    validations:
+      required: false
+  - type: textarea
+    id: out-of-bounds
+    attributes:
+      label: Out of bounds
+      description: Actions the executor must never take in this package. Examples - do not email the client, do not spend money, do not force-push, do not commit to a date on my behalf.
+    validations:
+      required: true
+  - type: dropdown
+    id: agent-owner
+    attributes:
+      label: Agent Owner
+      description: Who runs this.
+      options:
+        - Human
+        - Claude
+        - Hermes
+        - Codex
+        - GH Copilot
+        - CI
+    validations:
+      required: true
+  - type: dropdown
+    id: autonomy
+    attributes:
+      label: Autonomy
+      description: How far the owner may go alone. If unset, agents must assume Propose Only.
+      options:
+        - Propose Only
+        - Act Then Review
+        - Act Autonomously
+    validations:
+      required: true
+  - type: dropdown
+    id: evidence-required
+    attributes:
+      label: Evidence Required
+      description: What proves this is done.
+      options:
+        - None
+        - Self-Check
+        - Peer Review
+        - Human Acceptance
+    validations:
+      required: true
+  - type: input
+    id: accepted-by
+    attributes:
+      label: Accepted By
+      description: GitHub handle or role name. Required when Evidence Required is Human Acceptance.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Links to vault notes, prior issues, client material, decisions this depends on.
+    validations:
+      required: false
