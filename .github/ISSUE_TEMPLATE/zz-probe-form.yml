@@ -1,7 +1,0 @@
-name: ZZ Test Form
-description: Temporary inheritance probe, safe to delete
-body:
-  - type: input
-    id: probe
-    attributes:
-      label: Probe
