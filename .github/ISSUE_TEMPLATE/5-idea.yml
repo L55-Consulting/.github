@@ -1,5 +1,6 @@
 name: Idea
 description: Scratch pad. An unvalidated thought, not committed work. Nobody executes an Idea.
+type: Idea
 title: "[IDEA] "
 body:
   - type: textarea
