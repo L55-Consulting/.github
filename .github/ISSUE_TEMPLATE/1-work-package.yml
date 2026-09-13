@@ -54,43 +54,6 @@ body:
       description: Actions the executor must never take in this package. Examples - do not email the client, do not spend money, do not force-push, do not commit to a date on my behalf.
     validations:
       required: true
-  - type: dropdown
-    id: agent-owner
-    attributes:
-      label: Agent Owner
-      description: Who runs this.
-      options:
-        - Human
-        - Claude
-        - Hermes
-        - Codex
-        - GH Copilot
-        - CI
-    validations:
-      required: true
-  - type: dropdown
-    id: autonomy
-    attributes:
-      label: Autonomy
-      description: How far the owner may go alone. If unset, agents must assume Propose Only.
-      options:
-        - Propose Only
-        - Act Then Review
-        - Act Autonomously
-    validations:
-      required: true
-  - type: dropdown
-    id: evidence-required
-    attributes:
-      label: Evidence Required
-      description: What proves this is done.
-      options:
-        - NA
-        - Self-Check
-        - Peer Review
-        - Human Acceptance
-    validations:
-      required: true
   - type: input
     id: accepted-by
     attributes:
