@@ -54,13 +54,6 @@ body:
       description: Actions the executor must never take in this package. Examples - do not email the client, do not spend money, do not force-push, do not commit to a date on my behalf.
     validations:
       required: true
-  - type: input
-    id: accepted-by
-    attributes:
-      label: Accepted By
-      description: GitHub handle or role name. Required when Evidence Required is Human Acceptance.
-    validations:
-      required: false
   - type: textarea
     id: context
     attributes:
