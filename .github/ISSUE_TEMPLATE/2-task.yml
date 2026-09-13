@@ -21,16 +21,6 @@ body:
         - [ ] 
     validations:
       required: true
-  - type: dropdown
-    id: autonomy
-    attributes:
-      label: Autonomy
-      options:
-        - Propose Only
-        - Act Then Review
-        - Act Autonomously
-    validations:
-      required: true
   - type: textarea
     id: out-of-bounds
     attributes:
