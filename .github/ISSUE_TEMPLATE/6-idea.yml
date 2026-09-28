@@ -1,5 +1,5 @@
 name: Idea
-description: Scratch pad. An unvalidated thought, not committed work. Nobody executes an Idea.
+description: A thought nobody has committed to. Never worked on. Ends by retype to a committed type, or by close as not planned.
 type: Idea
 title: "[IDEA] "
 body:

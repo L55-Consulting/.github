@@ -1,0 +1,63 @@
+name: Story
+description: The smallest piece of work whose "done" is a quality judgement against acceptance criteria. Fits in a few days.
+type: Story
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Is this a Story?** Yes if someone has to judge whether it is good enough (a draft, a design, a skill change, a post). If "done" is a plain fact (it happened or it did not), use **Task**. The type does not depend on who does the work.
+        For a bug that needs judgement to fix, use this form and add the `bug` label.
+        Parent: a Feature, an Epic, or none. Children: Tasks.
+        After creating this issue, set the sidebar fields: **Agent Owner**, **Autonomy** (silence means Propose Only), **Evidence Required** (Peer Review or Human Acceptance), **Accepted By**.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: One sentence. What is true when this is done that is not true now.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: The quality bar the reviewer applies. Each item testable by someone other than the doer.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: For each criterion, how it is proven (a test, a command, a review, a sample output) and who checks it.
+      value: |
+        - Criterion 1:
+        - Criterion 2:
+    validations:
+      required: true
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: Standard closing gates. Add items only if this Story needs more.
+      value: |
+        - [ ] Every acceptance criterion verified, evidence linked in a comment
+        - [ ] Docs updated: <artefact>, or not needed
+        - [ ] Reviewed or accepted per Evidence Required
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-bounds
+    attributes:
+      label: Out of bounds
+      description: Leave blank to inherit the parent.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Links to vault notes, GBrain records, prior issues, material. For a bug - what happened, what should have happened, steps to reproduce.
+    validations:
+      required: false

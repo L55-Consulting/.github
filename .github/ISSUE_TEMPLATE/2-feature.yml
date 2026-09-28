@@ -1,0 +1,85 @@
+name: Feature
+description: One capability or artefact, software or document (skill, plugin, workflow, strategy, report, proposal, deck), built from two or more reviewed Stories.
+type: Feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Is this a Feature?** Yes if it is one thing that needs two or more reviewed pieces. If it fits in a few days as one reviewed piece, use **Story**. If it needs several things to change an outcome, use **Epic**.
+        Parent: an Epic or none. Children: Stories, Spikes. A Feature never sits under another Feature.
+        After creating this issue, set the sidebar fields: **Program**, **Client**, **Agent Owner**, **Autonomy**, **Evidence Required** (usually Human Acceptance), **Accepted By**. A form cannot set them for you.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: One sentence. What exists or works when this is done that does not now.
+      placeholder: L55 has a 2027 go-to-market strategy Martin can present to a partner.
+    validations:
+      required: true
+  - type: textarea
+    id: scope-in
+    attributes:
+      label: Scope - in
+      description: One item per line. Each reviewed piece usually becomes a child Story.
+    validations:
+      required: true
+  - type: textarea
+    id: scope-out
+    attributes:
+      label: Scope - out
+      description: Explicitly excluded. One item per line.
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance criteria
+      description: What must be true of the finished capability or artefact. Each item testable by someone other than the doer.
+      value: |
+        - [ ]
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: For each criterion, how it is proven (a test, a command, a review, a sample output) and who checks it.
+      value: |
+        - Criterion 1:
+        - Criterion 2:
+    validations:
+      required: true
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: Standard closing gates. Add items only if this Feature needs more.
+      value: |
+        - [ ] Every acceptance criterion verified, evidence linked in a comment
+        - [ ] Child Stories closed
+        - [ ] Docs updated: <artefact>, or not needed
+        - [ ] Accepted by the Accepted By person
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Budget, deadline, tool, policy, style.
+    validations:
+      required: false
+  - type: textarea
+    id: out-of-bounds
+    attributes:
+      label: Out of bounds
+      description: Actions the executor must never take. Leave blank to inherit the parent Epic. Examples - do not email the client, do not spend money, do not force-push.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Links to vault notes, GBrain records, prior issues, client material, decisions this depends on.
+    validations:
+      required: false

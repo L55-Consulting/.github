@@ -1,0 +1,48 @@
+name: Task
+description: A step whose "done" is a fact - it happened or it did not. A step inside a Story or Spike, or a standalone to-do, personal included.
+type: Task
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Is this a Task?** Yes if anyone can confirm it is done without judging quality (sent, paid, booked, merged, renamed). If someone must judge whether it is good enough, use **Story**.
+        For a bug with an obvious fix, use this form and add the `bug` label.
+        Parent: a Story, a Spike, or none. No children.
+        Set **Autonomy** in the sidebar before an agent picks this up. Silence means Propose Only. **Evidence Required** is usually Self-Check.
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: One sentence. What is true when this is done that is not true now.
+    validations:
+      required: true
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: Facts anyone can confirm. One per line.
+      value: |
+        - [ ]
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification
+      description: Optional. One line on how to confirm it (a link, a receipt, a command, a screenshot).
+    validations:
+      required: false
+  - type: textarea
+    id: out-of-bounds
+    attributes:
+      label: Out of bounds
+      description: Leave blank to inherit the parent.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Links, notes. For a bug - what happened, what should have happened, steps to reproduce.
+    validations:
+      required: false
