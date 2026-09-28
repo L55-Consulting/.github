@@ -1,12 +1,12 @@
 name: Epic
-description: A committed outcome, software or not, that needs two or more reviewed pieces. Closed when the outcome is accepted, not when the children close.
+description: 'A large outcome that changes how L55 or a client works, delivered through several Features, Stories, or Tasks. Test: no single piece delivers it on its own.'
 type: Epic
 body:
   - type: markdown
     attributes:
       value: |
         **Is this an Epic?** Yes if it changes how L55 or a client operates and no single capability or artefact delivers it. If one thing delivers it, use **Feature**.
-        Children: Features, Stories, Spikes. An Epic never sits under another Epic.
+        Children: Features, Stories, Spikes, Tasks. An Epic never sits under another Epic.
         After creating this issue, set the sidebar fields: **Program**, **Client**, **Agent Owner**, **Autonomy**, **Evidence Required** (usually Human Acceptance), **Accepted By**, **Target date**. A form cannot set them for you.
   - type: textarea
     id: outcome
