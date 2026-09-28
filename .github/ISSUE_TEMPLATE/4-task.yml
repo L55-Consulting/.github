@@ -7,7 +7,7 @@ body:
       value: |
         **Is this a Task?** Yes if anyone can confirm it is done without judging quality (sent, paid, booked, merged, renamed). If someone must judge whether it is good enough, use **Story**.
         For a bug with an obvious fix, use this form and add the `bug` label.
-        Parent: a Story, a Spike, or none. No children.
+        Parent: an Epic, a Feature, a Story, a Spike, or none. A standalone to-do has no parent. No children.
         Set **Autonomy** in the sidebar before an agent picks this up. Silence means Propose Only. **Evidence Required** is usually Self-Check.
   - type: textarea
     id: objective

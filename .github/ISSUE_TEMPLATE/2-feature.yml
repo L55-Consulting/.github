@@ -6,7 +6,7 @@ body:
     attributes:
       value: |
         **Is this a Feature?** Yes if it is one thing that needs two or more reviewed pieces. If it fits in a few days as one reviewed piece, use **Story**. If it needs several things to change an outcome, use **Epic**.
-        Parent: an Epic or none. Children: Stories, Spikes. A Feature never sits under another Feature.
+        Parent: an Epic or none. Children: Stories, Spikes, Tasks. A Feature never sits under another Feature.
         After creating this issue, set the sidebar fields: **Program**, **Client**, **Agent Owner**, **Autonomy**, **Evidence Required** (usually Human Acceptance), **Accepted By**. A form cannot set them for you.
   - type: textarea
     id: objective
