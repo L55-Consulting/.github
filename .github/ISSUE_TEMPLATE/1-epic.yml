@@ -1,5 +1,5 @@
 name: Epic
-description: A committed outcome, software or not, that needs two or more reviewed pieces. Closed when the outcome is accepted, not when the children close.
+description: 'A large outcome that changes how L55 or a client works, delivered through several Features, Stories, or Tasks. Test: no single piece delivers it on its own.'
 type: Epic
 body:
   - type: markdown

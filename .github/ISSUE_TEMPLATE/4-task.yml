@@ -1,5 +1,5 @@
 name: Task
-description: A step whose "done" is a fact - it happened or it did not. A step inside a Story or Spike, or a standalone to-do, personal included.
+description: 'A concrete action, done on its own or as a step inside a larger issue. Test: "done" is a fact - it happened or it did not.'
 type: Task
 body:
   - type: markdown
