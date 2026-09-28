@@ -1,0 +1,65 @@
+name: Spike
+description: A time-boxed question for L55's own planning. The answer decides L55's next work.
+type: Spike
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Is this a Spike?** Yes if the output is an answer that decides what L55 does next. If a client receives the answer, use **Feature** or **Story** instead.
+        Parent: an Epic, a Feature, or none. Children: Tasks (book a demo, run a test).
+        After creating this issue, set the sidebar fields: **Agent Owner**, **Autonomy** (silence means Propose Only), **Evidence Required**, **Target date** (the end of the time-box).
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: One question with an answer that can be stated in a sentence.
+      placeholder: Which CRM should L55 adopt, HubSpot or Pipedrive?
+    validations:
+      required: true
+  - type: textarea
+    id: decides
+    attributes:
+      label: What the answer decides
+      description: The next work or choice that waits on this answer.
+    validations:
+      required: true
+  - type: input
+    id: time-box
+    attributes:
+      label: Time-box
+      description: Maximum effort. When it runs out, answer with what you have.
+      placeholder: 1 day
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Approach
+      description: Optional. Sources, experiments, or people to consult.
+    validations:
+      required: false
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definition of Done
+      description: Standard closing gates for a Spike.
+      value: |
+        - [ ] Answer stated in one sentence in a closing comment, with the evidence behind it
+        - [ ] Recommendation given, with its main risk
+        - [ ] Decision recorded in GBrain, or follow-up issues created and linked
+    validations:
+      required: true
+  - type: textarea
+    id: out-of-bounds
+    attributes:
+      label: Out of bounds
+      description: Leave blank to inherit the parent. Examples - do not sign up for paid trials, do not contact vendors.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Links to vault notes, GBrain records, prior issues.
+    validations:
+      required: false
