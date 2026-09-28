@@ -1,5 +1,5 @@
 name: Story
-description: The smallest piece of work whose "done" is a quality judgement against acceptance criteria. Fits in a few days.
+description: 'One specific need or outcome for a user or stakeholder, delivered in a few days. Test: "done" is a quality judgement against acceptance criteria.'
 type: Story
 body:
   - type: markdown

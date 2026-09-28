@@ -1,5 +1,5 @@
 name: Spike
-description: A time-boxed question for L55's own planning. The answer decides L55's next work.
+description: 'A time-boxed question whose answer decides L55''s next work. Test: the answer is for L55, not a client.'
 type: Spike
 body:
   - type: markdown
